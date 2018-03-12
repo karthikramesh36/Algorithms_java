@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class ZigZagString {
 
-	// given a string , once written in zigzag formet , print it out again
+	// given a string , once written in zigzag format , print it out again
 	public String Convert(String s , int numberOfRows) {
 		
 		if(numberOfRows == 1 || s.length() == 1) {
