@@ -1,4 +1,7 @@
 package java_algos;
+
+import org.junit.Test;
+
 //Given an array of integers sorted in ascending order, find the starting and ending position of a given target value.
 //
 //Your algorithm's runtime complexity must be in the order of O(log n).
@@ -9,7 +12,6 @@ package java_algos;
 //Given [5, 7, 7, 8, 8, 10] and target value 8,
 //return [3, 4].
 
-import org.junit.jupiter.api.Test;
 
 public class SearchForRange {
 	
