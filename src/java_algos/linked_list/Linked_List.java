@@ -27,6 +27,13 @@ public class Linked_List {
 		current.next = new Node(node);
 	}
 	
+	public void push(Object node) {
+	
+		Node current = new Node(node);
+		current.next = head;
+		head = current;
+	}
+	
 	public String toString() {
 		Node current = head;
 		String result = "";
