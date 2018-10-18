@@ -22,10 +22,8 @@ public class TwoSum {
 	
 	public int[] twoSumAlternate(int[] nums, int target) {
         int complement; 
-        //loop to check every element in the array
         for (int x = 0; x<nums.length; x++) {  
             complement = target - nums[x];
-            //loop to find complement of current element
             for (int y = 0; y<nums.length; y++) { 
                 //we cannot use same element twice.
                 if (x ==  y) { continue; } 
