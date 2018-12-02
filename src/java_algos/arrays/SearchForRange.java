@@ -1,4 +1,4 @@
-package java_algos;
+package java_algos.arrays;
 
 import org.junit.Test;
 

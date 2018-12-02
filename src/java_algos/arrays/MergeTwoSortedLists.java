@@ -1,4 +1,4 @@
-package simple_algorithms;
+package java_algos.arrays;
 
 import java.util.ArrayList;
 

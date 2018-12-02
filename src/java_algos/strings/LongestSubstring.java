@@ -1,4 +1,4 @@
-package java_algos;
+package java_algos.strings;
 
 
 import static org.junit.Assert.assertEquals;
