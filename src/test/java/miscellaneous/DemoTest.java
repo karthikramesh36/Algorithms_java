@@ -1,4 +1,8 @@
-import org.testng.annotations.Test;
+package miscellaneous;
+
+import org.junit.Test;
+
+import miscellaneous.Demo;
 
 public class DemoTest{
 

@@ -25,35 +25,44 @@ Output: 3
  */
 public class NumberOfIslands {
 
-    public int numberOfIslands(int[][] array) {
-        int rows = array.length-1;
-        int columns = array[0].length-1;
-        int numberOfIslands = 0;
-        for(int i = 0; i< rows; i++){
-            for( int j =0; j< columns; j++){
-                if(array[i][j] == 1){
-                    dfs(array, i, j);
-                    numberOfIslands++;
-                }
-            }
-        }
-
-        return numberOfIslands;
+	/*
+	 * pseudo
+	 * for every element in matrix
+	 * perform dfs as recursion if element 1 
+	 * exit recursion is element out of bounds or 0
+	 * during dfs , set current element as 0
+	 * and explore only nodes above , below, left and right */
+    public int numberOfIslands(char[][] array) {
+    	int nr = array.length;
+    	int nc = array[0].length;
+    	int numberOfIslands = 0;
+    	for (int i = 0; i < nr; i++) {
+    		for (int j = 0; j < nc; j++) {
+				if(array[i][j] == '1') {
+					numberOfIslands++;
+					dfs(array,i,j);
+				}
+			}
+			
+		}
+    	
+    	return numberOfIslands;
     }
 
-    public void dfs(int[][] array, int row, int col){
-        if(row < 0 || col < 0 || row >= array.length-1 || col >= array[0].length-1){
-            return;
-        }
-         if ( array[row][col] == 1 ){
-            array[row][col] = 0;
-            return;
-        }
-
-        dfs(array, row+1, col);
-        dfs(array, row-1, col);
-        dfs(array, row, col+1);
-        dfs(array, row, col-1);
-
-    }
+	private void dfs(char[][] array, int row, int col) {
+    	int nr = array.length;
+    	int nc = array[0].length;
+    	
+    	if(row<0 || col<0 || row >= nr || col >= nc || array[row][col] == '0')
+    		return;
+    	
+    	array[row][col] = '0';
+    	dfs(array, row+1, col);
+    	dfs(array, row, col+1);
+    	dfs(array, row-1, col);
+    	dfs(array, row, col-1);
+    	
+    	
+		
+	}
 }

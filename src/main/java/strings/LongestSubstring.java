@@ -46,7 +46,7 @@ public class LongestSubstring {
 	
 	@Test
 	public void test() {
-		String s = "avnendjaivn";
+		//String s = "avnendjaivn";
 		String s1 = "pwwkew";
 		LongestSubstring ls = new LongestSubstring();
 		assertEquals(3, ls.LongestSubstringWithlength(s1));
