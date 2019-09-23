@@ -9,7 +9,7 @@
             "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
-            "mainClass": "/Users/karthik/Documents/Workspace/Java/java_algos/src/main/java/java_algos/Demo.java"
+            "mainClass": "/Users/karthik/Documents/Workspace/Java/java_algos/src/test/java/greedy/MaximumSubArrayTest.java"
         }
     ]
 }
