@@ -1,6 +1,8 @@
-package Math;
+package math;
 
 import org.junit.Test;
+
+import math.BestMeetingPoint;
 
 
 public class BestMeetingPointTest {
