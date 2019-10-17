@@ -1,15 +1,15 @@
 package linked_list;
 
 public class Node {
-	int value ;
-	Node next ;
+	public int value ;
+	public Node next ;
 	
-	Node(Object value){
+	public Node(Object value){
 		this.value = (int) (value);
 		this.next = null;
 	}
 	
-	Node(){
+	public Node(){
 		this.next = null;
 	}
 	
