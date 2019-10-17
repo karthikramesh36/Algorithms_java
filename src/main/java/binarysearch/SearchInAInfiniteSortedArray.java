@@ -18,9 +18,9 @@ public class SearchInAInfiniteSortedArray {
 				high = arr.length-1;
 			else
 				high = 2 * high;
-			
-				
 		}
+		
+		return BinarySearch.SearchAdvanced(arr, low, high, target);
 	}
 
 }
