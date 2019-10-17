@@ -16,3 +16,7 @@ log/
 target/
 
 bin/
+
+.vscode/
+.metadata/
+.settings/
