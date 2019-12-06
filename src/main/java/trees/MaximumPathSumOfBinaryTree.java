@@ -9,7 +9,7 @@ public class MaximumPathSumOfBinaryTree {
     int maxPathSum;
     public int maximumPath(TreeNode root) {
         maxPathSum = Integer.MIN_VALUE;
-        maxPathSum = maximumPathHelper(root);
+        maximumPathHelper(root);
         return maxPathSum;
     }
 
@@ -18,7 +18,9 @@ public class MaximumPathSumOfBinaryTree {
 
         int left = Math.max(0, maximumPathHelper(root.left));
         int right = Math.max(0, maximumPathHelper(root.right));
-        maxPathSum = Math.max(maxPathSum, root.val + left + right );
+        int newPathPrice = root.val + left + right;
+        
+        maxPathSum = Math.max(maxPathSum, newPathPrice );
 
         return Math.max(left, right) + root.val;
     }
